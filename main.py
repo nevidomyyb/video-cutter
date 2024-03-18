@@ -17,7 +17,7 @@ def main_streamlit():
 def main_loop():
     while True:
         sleep(60*10)
-        # delete_files()
+        delete_files()
             
 def stop_processes(processes):
     for p in processes:
