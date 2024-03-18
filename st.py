@@ -16,7 +16,7 @@ if video_file:
     if st.button("Trim", disabled=not (r1 and r2)):
         start = string_to_acceptable_list(start)
         end = string_to_acceptable_list(end)
-        with st.spinner(text="Download will be available after this process eds"):
+        with st.spinner(text="Download will be available after this process ends"):
             cutted_video = trim_video(video_file, start, end)
         if cutted_video:
             with open(cutted_video, "rb") as f:
