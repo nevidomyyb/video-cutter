@@ -3,6 +3,7 @@ from utils.string_to_acceptable_list import string_to_acceptable_list
 from utils.trim_video import trim_video
 from utils.check_format import check_format    
 
+st.info("Currently the server is not dealing with larger videos.", icon="🚨")
 video_file = st.file_uploader("Select a video", ['mp4',], False)
 if video_file:
     st.video(video_file, "video/mp4", 0)
